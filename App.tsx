@@ -1,30 +1,16 @@
+import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
-const App = (): JSX.Element => {
+import Travel from './components/Travel';
+
+const App = () => {
   return (
-    <SafeAreaView style={Styles.container}>
-      <View style={Styles.view}>
-        <Text style={Styles.text}>Hello</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.main}>
+      <Travel />
+    </View>
   );
 };
-const Styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  view: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 0.15,
-    padding: 25,
-    backgroundColor: 'beige',
-  },
-  text: {
-    color: 'cornflowerblue',
-    fontSize: 40,
-    fontFamily: 'Oswald',
-    fontWeight: '400',
-  },
+const styles = StyleSheet.create({
+  main: {},
 });
+
 export default App;
